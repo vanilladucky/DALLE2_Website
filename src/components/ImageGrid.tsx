@@ -16,10 +16,28 @@ const ImageGrid = ({ input, input_arr }: Props) => {
     <div>
       <Box marginX="20vw" marginTop="20vh">
         {!isLoading && (
-          <Text align={"center"} fontSize="4xl">
-            Hi Thera fas d fae afwe awef wef fewf wef awe fwe faw awef ew f aef
-            awef ew f fwea
-          </Text>
+          <Box backgroundColor="rgba(108, 122, 137, .5)">
+            <Text align={"center"} fontSize="4xl">
+              Welcome!
+              <Text fontSize="0.5em">
+                <br />
+                <br />
+                Let your imagination run free and your brain overflow with the
+                creative juice you've got, cause the sky is your limit when it
+                comes to OpenAI's DALL-E.
+                <br />
+                <br />
+                Utilizing OpenAI's API, and with only a couple of creative,
+                detailed prompts, you can be an artist yourself.
+                <br />
+                <br />
+                You can either type in what you want in a full sentence in the
+                bar on top, or you can type in all the attributes suggested at
+                the side panel. The more detailed and descriptive your prompts
+                are, the better the picture would be.
+              </Text>
+            </Text>
+          </Box>
         )}
       </Box>
 

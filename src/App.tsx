@@ -38,14 +38,14 @@ function App() {
           }}/>
       </GridItem>
       <Show above="lg">
-        <GridItem pl="2" bg="pink.300" area={"nav"}>
+        <GridItem pl="2" borderRight = 'inset' borderTop = 'inset' borderTopRightRadius = '20px' boxShadow='dark-lg' p='6' borderRightColor = 'grey' area={"nav"}>
           <SideMenu onSubmit = {(final_prompt) => {
             setImages(final_prompt)
             setCollection((prevcollection) => [...prevcollection, final_prompt])
           }}/>
         </GridItem>
       </Show>
-      <GridItem pl="2" bg="green.300" area={"main"}>
+      <GridItem pl="2"  area={"main"} backgroundImage="url('https://static.vecteezy.com/system/resources/previews/000/830/014/original/futuristic-banner-background-with-wireframe-terrain-vector.jpg')" bgRepeat="no-repeat" bgPosition="center" bgSize='cover'>
         <ImageGrid input = {images} input_arr = {collection}/>
       </GridItem>
     </Grid>
